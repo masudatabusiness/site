@@ -1,0 +1,330 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Un gris très clair pour le fond */
+    color: #333; /* Un gris foncé pour une bonne lisibilité */
+}
+
+/* En-tête de la page */
+.header {
+    background-color: #004d40; /* Un vert foncé élégant */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+/* Style du conteneur de la navigation */
+nav {
+    background-color: #333; /* Couleur de fond foncée pour la barre de navigation */
+    padding: 15px; /* Espace intérieur pour la barre */
+    text-align: center; /* Centre le texte (les liens) horizontalement */
+}
+
+/* Enlève les points de la liste et les marges par défaut */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Permet de centrer la liste entière */
+}
+
+/* Style des éléments de la liste (chaque bouton de menu) */
+nav li {
+    display: inline-block; /* Aligne les éléments horizontalement (un à côté de l'autre) */
+    margin-right: 25px; /* Espace à droite de chaque bouton */
+}
+
+/* Style des liens (le texte des boutons) */
+nav li a {
+    color: white; /* Couleur du texte en blanc */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    font-size: 18px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    padding: 10px 15px; /* Espace autour du texte pour créer une zone cliquable */
+    border-radius: 5px; /* Arrondit les coins pour l'effet bouton */
+    transition: background-color 0.3s ease; /* Ajoute une transition pour le survol */
+}
+
+/* Style au survol (quand la souris passe sur le lien) */
+nav li a:hover {
+    background-color: #575757; /* Change la couleur de fond au survol */
+}
+
+/* Style du lien actif (optionnel, si vous voulez indiquer la page courante) */
+nav li a.active {
+    background-color: #007bff; /* Couleur de fond différente pour la page active */
+    color: white;
+}
+.header .logo {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.header .slogan {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Une ombre légère pour l'effet de carte */
+}
+
+/* Styles pour les sections */
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee; /* Une ligne fine pour séparer les sections */
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* Titres des sections (h2) */
+h2 {
+    color: #007bff; /* Un bleu vif pour attirer l'attention */
+    font-size: 1.8em;
+    border-left: 4px solid #004d40; /* Une bordure latérale pour un effet moderne */
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Sous-titres (h3) */
+h3 {
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* Styles des listes */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%2328a745" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') no-repeat left center;
+    background-size: 18px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Style pour les informations clés et les services */
+.info-item, .service-item {
+    margin-bottom: 15px;
+}
+.info-item strong {
+    color: #004d40;
+}
+/* ------------------------------------------- */
+/* --- Pied de page --- */
+/* ------------------------------------------- */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #004d40; /* Couleur de fond de l'en-tête, pour la cohérence */
+    color: #ffffff; /* Texte en blanc */
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .designer {
+    font-style: italic;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+/* Styles pour la section de contact */
+#contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.2em;
+    color: #004d40;
+    text-align: center;
+    border-left: none; /* Enlève la bordure du titre si elle était là */
+}
+
+/* Styles pour les informations de contact (email, téléphone) */
+.contact-info {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact-info .icon {
+    margin-right: 5px;
+}
+
+/* Styles pour le formulaire lui-même */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Ajoute un espace entre chaque champ */
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Styles pour les champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Styles pour le bouton d'envoi */
+button[type="submit"] {
+    padding: 15px;
+    background-color: #004d40;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #00332c;
+}
+.social-icons {
+  /* Centre le conteneur horizontalement */
+  display: flex;
+  justify-content: center;
+  
+  /* Ajoute un peu d'espace autour du conteneur */
+  margin-top: 20px;
+}
+
+.social-icons a {
+  /* Style des liens pour qu'ils ressemblent à des boutons */
+  text-decoration: none; /* Enlève le soulignement */
+  color: white; /* Texte en blanc */
+  padding: 10px 20px; /* Ajoute un espace à l'intérieur des boutons */
+  border-radius: 5px; /* Arrondit les coins */
+  margin: 0 10px; /* Ajoute un espace entre les boutons */
+}
+
+/* Couleurs spécifiques pour chaque bouton */
+.social-icons a:nth-child(1) {
+  background-color: #3b5998; /* Bleu Facebook */
+}
+
+.social-icons a:nth-child(2) {
+  background-color: #1da1f2; /* Bleu Twitter */
+}
+
+.social-icons a:nth-child(3) {
+  background-color: #0077b5; /* Bleu LinkedIn */
+}
+/* Style du conteneur de la navigation */
+nav {
+    background-color: #333;
+    padding: 15px;
+    display: flex; /* Active Flexbox pour la barre de navigation */
+    justify-content: space-between; /* Aligne le logo à gauche et le menu à droite */
+    align-items: center; /* Centre les éléments verticalement */
+}
+/* Style du logo */
+.logo {
+    height: 40px; /* Ajuste la hauteur de votre logo */
+}
+
+/* Enlève les marges de la liste et les points */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Active Flexbox pour la liste du menu */
+}
+
+/* Style des éléments de la liste (chaque bouton de menu) */
+nav li {
+    margin-right: 25px; /* Espace à droite de chaque bouton */
+}
+
+/* Style des liens (le texte des boutons) */
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+/* Style au survol (quand la souris passe sur le lien) */
+nav li a:hover {
+    background-color: #4462e6;
+}
+footer {
+    background-color: #004d40; /* Un vert foncé élégant */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px; /* Pour un espace suffisant au-dessus du pied de page */
+}
+.footer-social-icons {
+    margin-bottom: 15px;
+}
+.footer-social-icons a {
+    color: rgb(249, 249, 249);
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.5s ease;
+}
+.footer-social-icons a:hover {
+    color: #007bff; /* Changement de couleur au survol */
+}
